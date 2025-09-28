@@ -24,5 +24,6 @@ yarn-error.log*
 
 
 #extras
+.env
 node-latest.msi
 tailwindcss.exe
