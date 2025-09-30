@@ -16,17 +16,12 @@ const registerUser = async (req, res) => {
 
     // Check if user exists
     const userExists = await User.findOne({ email });
-
     if (userExists) {
       return res.status(400).json({ message: 'User already exists' });
     }
 
     // Create user
-    const user = await User.create({
-      name,
-      email,
-      password,
-    });
+    const user = await User.create({ name, email, password });
 
     if (user) {
       res.status(201).json({
@@ -39,7 +34,8 @@ const registerUser = async (req, res) => {
       res.status(400).json({ message: 'Invalid user data' });
     }
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('registerUser error:', error);
+    res.status(500).json({ message: 'Server error. Please try again later.' });
   }
 };
 
@@ -50,7 +46,7 @@ const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    // Check for user email
+    // Find user by email and select password for verification
     const user = await User.findOne({ email }).select('+password');
 
     if (user && (await user.matchPassword(password))) {
@@ -64,7 +60,8 @@ const loginUser = async (req, res) => {
       res.status(401).json({ message: 'Invalid email or password' });
     }
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('loginUser error:', error);
+    res.status(500).json({ message: 'Server error. Please try again later.' });
   }
 };
 
@@ -86,12 +83,9 @@ const getUserProfile = async (req, res) => {
       res.status(404).json({ message: 'User not found' });
     }
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error('getUserProfile error:', error);
+    res.status(500).json({ message: 'Server error. Please try again later.' });
   }
 };
 
-module.exports = {
-  registerUser,
-  loginUser,
-  getUserProfile,
-};
+module.exports = { registerUser, loginUser, getUserProfile };
