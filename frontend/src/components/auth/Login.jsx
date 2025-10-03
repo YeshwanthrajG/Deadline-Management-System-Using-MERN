@@ -21,10 +21,10 @@ const Login = () => {
 
     try {
       await login(formData);
-      toast.success('🎉 Login successful!');
+      toast.success('Login successful!');
       navigate('/tasks');
     } catch (error) {
-      toast.error(error.response?.data?.message || error.message || '❌ Login failed');
+      toast.error(error.response?.data?.message || error.message || 'Login failed');
     } finally {
       setLoading(false);
     }
@@ -49,7 +49,7 @@ const Login = () => {
           <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-2">
             Welcome Back!!!
           </h2>
-          <p className="text-gray-400">Sign in to continue to TaskFlow</p>
+          <p className="text-gray-400">Sign in to continue to Clockyn</p>
         </div>
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
