@@ -128,7 +128,7 @@ npm start
 
 ## Project Structure
 
-```bash
+```markdown
 Deadline-Management-System-Using-MERN/
 backend/
     config/
@@ -172,6 +172,7 @@ frontend/
     postcss.config.js
     README.md
     tailwind.config.js
+LICENSE
 README.md
 ```
 
@@ -190,4 +191,23 @@ README.md
 
 ## Contributing
 
+1. Fork and clone this repo
+2. Create your branch (`git checkout -b feature/my-feature`)
+3. Commit changes (`git commit -m "Add new feature"`)
+4. Push to your fork (`git push origin feature/my-feature`)
+5. Open a pull request
+
 ## License
+
+MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Author
+
+**Yeshwanthraj G**  
+[GitHub: @YeshwanthrajG](https://github.com/YeshwanthrajG)
+
+---
+
+> ⭐ Star this repo if you found it helpful!
