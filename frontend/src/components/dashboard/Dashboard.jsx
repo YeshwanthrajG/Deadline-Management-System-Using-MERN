@@ -219,9 +219,9 @@ const Dashboard = () => {
               <RocketLaunchIcon className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-3xl font-bold text-white mb-4">
-              {progress.completionRate >= 80 ? '🎉 Outstanding Performance!' :
-               progress.completionRate >= 60 ? '💪 Excellent Progress!' :
-               progress.completionRate >= 40 ? '👍 Keep Up The Momentum!' :
+              {progress.completionRate >= 80 ? 'Outstanding Performance!' :
+               progress.completionRate >= 60 ? 'Excellent Progress!' :
+               progress.completionRate >= 40 ? 'Keep Up The Momentum!' :
                '🚀 Ready To Achieve More!'}
             </h3>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
