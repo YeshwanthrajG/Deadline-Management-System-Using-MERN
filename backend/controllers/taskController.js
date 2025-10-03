@@ -88,7 +88,7 @@ const getTasks = async (req, res) => {
 
     // Sorting (optional, unchanged)
     if (sortBy === 'priority') {
-      const prioritySortMap = { high: 3, medium: 2, low: 1 };
+      const prioritySortMap = { high: 1, medium: 2, low: 3 };
       const direction = sortOrder === 'desc' ? -1 : 1;
       tasks.sort((a, b) => {
         const diff = (prioritySortMap[a.priority || 'medium'] - prioritySortMap[b.priority || 'medium']) * direction;
