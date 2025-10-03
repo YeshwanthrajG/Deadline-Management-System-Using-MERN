@@ -1,3 +1,4 @@
+// emojis are copied from online websites
 import React, { useState, useEffect } from 'react';
 import { useTasks } from '../../context/TaskContext';
 import Button from '../common/Button';
@@ -96,15 +97,15 @@ const TaskForm = ({ initialData = null, onDone }) => {
 
       if (initialData?._id) {
         await updateTask(initialData._id, data);
-        toast.success('✅ Task updated successfully!');
+        toast.success('Task updated successfully!');
       } else {
         await createTask(data);
-        toast.success('🎉 Task created successfully!');
+        toast.success('Task created successfully!');
       }
 
       if (onDone) onDone();
     } catch {
-      toast.error('❌ Failed to save task. Please try again.');
+      toast.error('Failed to save task. Please try again.');
     }
     setLoading(false);
   }

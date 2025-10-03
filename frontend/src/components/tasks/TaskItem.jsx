@@ -1,3 +1,4 @@
+// emojis are copied from online websites
 import React, { useState } from 'react';
 import { useTasks } from '../../context/TaskContext';
 import Button from '../common/Button';
