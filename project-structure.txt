@@ -41,6 +41,19 @@ frontend/
     postcss.config.js
     README.md
     tailwind.config.js
+output
+    board1.png
+    board2.png
+    create.png
+    dashboard2.png
+    dashboard3.png
+    dashboard11.png
+    dashboard12.png
+    dashboard13.png
+    edit1.png
+    edit2.png
+    login.png
+    register.png
 LICENSE
 project-structure.txt
 README.md
