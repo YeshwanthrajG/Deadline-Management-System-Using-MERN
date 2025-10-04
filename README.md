@@ -1,6 +1,6 @@
 ### Deadline Management System using MERN
 
-A feature rich, full stack deadline management application. Built with React.js, Node.js, Express.js, and MongoDB, this project helps users plan, categorize, and track all their tasks, including recurring and custom deadlines via a responsive, and interactive dashboard. The application features a beautiful glassmorphism UI design and allows users to manage their daily tasks efficiently with user authentication, task CRUD operations, and real-time updates.
+Clockyn - A feature rich, full stack deadline management application. Built with React.js, Node.js, Express.js, and MongoDB, this project helps users plan, categorize, and track all their tasks, including recurring and custom deadlines via a responsive, and interactive dashboard. The application features a beautiful glassmorphism UI design and allows users to manage their daily tasks efficiently with user authentication, task CRUD operations, and real-time updates.
 
 ## Table of Contents
 
@@ -15,6 +15,7 @@ A feature rich, full stack deadline management application. Built with React.js,
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
+- [Author](#author)
 
 ## Features
 
@@ -128,53 +129,7 @@ npm start
 
 ## Project Structure
 
-```markdown
-Deadline-Management-System-Using-MERN/
-backend/
-    config/
-    controllers/
-    middleware/
-    models/
-    node_modules/
-    routes/
-    tests/
-    uploads/
-    utils/
-    .env
-    .gitignore
-    package-lock.json
-    package.json
-    server.js
-frontend/
-    node_modules/
-    public/
-    src/
-        components/
-            auth/
-            common/
-            dashboard/
-            layout/
-            tasks/
-        context/
-        services/
-        App.css
-        App.js
-        App.test.js
-        index.css
-        index.js
-        reportWebVitals.js
-        setupTests.js
-        tailwind-output.css
-    .env
-    .gitignore
-    package-lock.json
-    package.json
-    postcss.config.js
-    README.md
-    tailwind.config.js
-LICENSE
-README.md
-```
+See the [project-structure.txt](project-structure.txt) file for details.
 
 ## Usage
 
@@ -189,7 +144,11 @@ README.md
 
 ## Screenshots
 
+See the [SCREENSHOTS](screenshots.md) file for details.
+
 ## Contributing
+
+📢 Open to All Contributors
 
 1. Fork and clone this repo
 2. Create your branch (`git checkout -b feature/my-feature`)
@@ -211,3 +170,5 @@ MIT License. See the [LICENSE](LICENSE) file for details.
 ---
 
 > ⭐ Star this repo if you found it helpful!
+
+---
