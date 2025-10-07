@@ -58,4 +58,4 @@ LICENSE
 project-structure.txt
 README.md
 screenshots.md
-Software-Requirement-Specification.pdf
+Software-Requirements-Specification.pdf
